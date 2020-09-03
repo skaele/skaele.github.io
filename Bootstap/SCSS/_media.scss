@@ -1,0 +1,338 @@
+@media(max-width:1200px){
+    .menu{
+        &_item{
+            padding-right: 20px;
+        }
+        &_link{
+            font-size: 13px;
+        }
+    }
+    .promo{
+        h1{
+            font-size: 50px;
+        }
+        &_btn{
+            margin-top: 50px;
+        }
+    }
+    .reasons{
+        .col-md-6{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &_desc{
+            width: 300px;
+        }
+    }
+    .m_app{
+        .card{
+            width: 300px;
+        }
+    }
+}
+
+@media(max-width:991px){
+    .menu{
+        &_item{
+            padding-right: 8px;
+        }
+        &_link{
+            font-size: 10px;
+        }
+    }
+    .subheader{
+        .order_call_btn{
+            width: 100%;
+        }
+        .Logo{
+            &_img{
+                width: 100%;
+            }
+            &_text{
+                font-size: 11px;
+            }
+        }
+        .call{
+            .text{
+                font-size: 11px;
+            }
+
+            .phone{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .promo{
+        padding-bottom: 80px;
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        &_btn{
+            margin-top: 40px;
+        }
+    }
+
+    .reasons{
+        &_desc{
+            margin-top: 20px;
+        }
+        .col-md-6 {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+
+    .m_app{
+        .card{
+            width: 230px;
+        }
+    }
+    .footer{
+		&_wrapper{
+            flex-wrap: wrap;
+        }
+		&_wrapper > div {
+			width: 100%;
+			display: flex ;
+			justify-content: center;
+            margin-bottom: 20px;
+			&:nth-child(1){
+				width: 100%;
+            }
+			&:nth-child(3){
+				width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width:767px){
+    .subheader{
+        .container{
+            max-width: 100%;
+        }
+        .Logo{
+            margin-top: 25px;
+            &_text{
+                display: none;
+            }
+        }
+        .call{
+            display: none;
+        }
+        .order_call{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .phone{
+                display: block;
+                margin-top: 5px;
+            }
+            &_btn{
+                width: 170px;
+                height: 40px;
+                margin-top: 1px;
+            }
+        }
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0, 0.8);
+        transition: 0.6s all;
+        z-index: 2;
+        &_active{
+            left: 0;
+        }
+        &_item{
+            padding-right: 0;
+            border: none;
+            margin: 10px 0px;
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .reasons{
+        &_desc{
+            width: 80%;
+        }
+    }
+
+    .choice .car_head{
+        margin-top: 58px;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 12px;
+        span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active{
+            span{
+                margin-bottom: -2px;
+                &:first-child{
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                &:nth-child(3){
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:575px){
+    nav{
+        height: 30px;
+    }
+    header{
+        height: 30px;
+    }
+    .subheader{
+        height: 60px;
+        top: 30px;
+        .Logo{
+            margin-top: 17px;
+            &_img{
+                img{
+                    width: 130px;
+                    height: 15px;
+                }
+            }
+        }
+        .order_call{
+            margin-top: 11px;
+            &_btn {
+                font-size: 10px;
+                width: 110px;
+                height: 22px;
+                &:hover{
+                    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+                }
+            }
+            .phone{
+                margin-top: 0px;
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .menu{
+        width: 85%;
+        &_item{
+            width: 100%;
+            text-align: center;
+            padding: 4px 0px;
+        }
+        &_link{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .choice .car_head{
+        margin-top: 50px;
+    }
+    .promo {
+        padding-top: 160px;
+        min-height: 400px;
+        line-height: 35px;
+        h1{
+            font-size: 30px;
+            padding: 0 24px;
+        }
+        h2{
+            font-size: 20px;
+            margin-top: 11px;
+        }
+        &_desc{
+            display: none;
+        }
+        &_btn{
+            &:hover{
+                background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%);
+            }
+        }
+
+    }
+    footer{
+        padding: 25px 0 20px 0;
+    }
+        
+    .footer{
+		&_line{
+			width: 253px;
+			margin: 0 auto;
+        }
+		&_wrapper{
+            padding-top: 22px;
+        }
+		&_wrapper > div {
+			margin-bottom: 20px;
+			&:nth-child(1){
+                order: 2;
+            }
+			&:nth-child(2){
+                order: 1;
+            }
+			&:nth-child(3){
+                order: 3;
+            }
+        }
+		&_links{
+			width: 290px ;
+			&_main {
+				padding: 0;
+                font-size: 14px;
+            }
+			&_sub {
+				flex-wrap: wrap;
+				justify-content: center;
+				a {
+                    margin: 0 7px;
+                }
+            }
+			&_lang {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width:410px){
+    .choice .car_head{
+        margin-top: 21px;
+    }
+}
